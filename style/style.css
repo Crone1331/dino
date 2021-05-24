@@ -1,0 +1,69 @@
+.game__window {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    margin-top: 200px;
+}
+
+#score {
+    font-size: 30px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.text {
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.dino {
+    position: relative;
+    top: 120px;
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/dino.gif");
+    background-size: 80px 80px;
+}
+
+.cactus {
+    width: 60px;
+    height: 100px;
+    background-image: url(../img/cactus.png);
+    background-size: 60px 100px;
+    position: relative;
+    left: 540px;
+    top: 25px;
+    animation: cactusMov 1.7s infinite linear;
+}
+
+@keyframes cactusMov {
+    0% {
+        left: 540px;
+    }
+    100% {
+        left: -60px;
+    }
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 120px;
+    }
+    30% {
+        top: 30px;
+    }
+    50% {
+        top: -20px;
+    }
+    80% {
+        top: 30px;
+    }
+    100% {
+        top: 120px;
+    }
+}
