@@ -2,7 +2,10 @@ const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 let scoresItem = document.getElementById("score");
 let scores = 0;
-document.addEventListener("keydown" || "touchstart", function(event) {
+document.addEventListener("keydown", function(event) {
+    jump();
+});
+document.addEventListener("touchstart", function(event) {
     jump();
 });
 
